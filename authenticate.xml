@@ -1,0 +1,7 @@
+<gmp xmlns="http://www.gmp.openvas.org/ver/22.9">
+    <authenticate>
+        <username>admin</username>
+        <password>Be04232016!</password>
+    </authenticate>
+</gmp>
+

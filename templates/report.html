@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pentesting Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Pentesting Report</h1>
+    <h2>Summary</h2>
+    <p>Total Hosts: {{ report.summary.total_hosts }}</p>
+    <p>Vulnerable Hosts: {{ report.summary.vulnerable_hosts }}</p>
+    <h2>Details</h2>
+    <ul>
+        {% for detail in report.details %}
+        <li>
+            <strong>Host:</strong> {{ detail.host }}<br>
+            <strong>Info:</strong> {{ detail.info }}<br>
+            <strong>Vulnerabilities:</strong> {{ detail.vulnerabilities }}<br>
+        </li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>

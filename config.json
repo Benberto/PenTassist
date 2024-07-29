@@ -1,0 +1,7 @@
+{
+  "nmap_target": "10.0.2.7",
+  "openvas_host": "127.0.0.1",
+  "openvas_port": 9392,
+  "openvas_user": "admin",
+  "openvas_password": "Be04232016!"
+}

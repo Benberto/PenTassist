@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pentesting Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Pentesting Assistant</h1>
+    <form action="/scan" method="post">
+        <button type="submit">Start Scan</button>
+    </form>
+    <br>
+    <a href="/report">View Report</a>
+</body>
+</html>
